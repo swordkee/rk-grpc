@@ -9,8 +9,8 @@ import (
 	"context"
 	"github.com/rookie-ninja/rk-entry/v2/middleware"
 	"github.com/rookie-ninja/rk-entry/v2/middleware/prom"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware/context"
+	"github.com/swordkee/rk-grpc/v2/middleware"
+	"github.com/swordkee/rk-grpc/v2/middleware/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/status"
 )

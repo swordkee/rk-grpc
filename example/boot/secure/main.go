@@ -8,7 +8,7 @@ import (
 	"context"
 	_ "embed"
 	"github.com/rookie-ninja/rk-entry/v2/entry"
-	"github.com/rookie-ninja/rk-grpc/v2/boot"
+	"github.com/swordkee/rk-grpc/v2/boot"
 	"net/http"
 )
 

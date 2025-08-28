@@ -10,7 +10,7 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 	rkcursor "github.com/rookie-ninja/rk-entry/v2/cursor"
 	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
+	"github.com/swordkee/rk-grpc/v2/middleware"
 	"github.com/rookie-ninja/rk-logger"
 	"github.com/rookie-ninja/rk-query"
 	"github.com/stretchr/testify/assert"

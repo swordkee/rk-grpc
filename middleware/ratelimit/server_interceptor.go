@@ -9,9 +9,9 @@ import (
 	"context"
 	"github.com/rookie-ninja/rk-entry/v2/middleware"
 	"github.com/rookie-ninja/rk-entry/v2/middleware/ratelimit"
-	"github.com/rookie-ninja/rk-grpc/v2/boot/error"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware/context"
+	"github.com/swordkee/rk-grpc/v2/boot/error"
+	"github.com/swordkee/rk-grpc/v2/middleware"
+	"github.com/swordkee/rk-grpc/v2/middleware/context"
 	"google.golang.org/grpc"
 )
 

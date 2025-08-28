@@ -12,7 +12,7 @@ import (
 	"encoding/json"
 	"github.com/rookie-ninja/rk-entry/v2/entry"
 	"github.com/rookie-ninja/rk-entry/v2/middleware"
-	"github.com/rookie-ninja/rk-grpc/v2/middleware"
+	"github.com/swordkee/rk-grpc/v2/middleware"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/encoding"

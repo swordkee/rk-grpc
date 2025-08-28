@@ -9,8 +9,8 @@ import (
 	_ "embed"
 	"fmt"
 	"github.com/rookie-ninja/rk-entry/v2/entry"
-	"github.com/rookie-ninja/rk-grpc/v2/boot"
-	proto "github.com/rookie-ninja/rk-grpc/v2/example/middleware/proto/testdata"
+	"github.com/swordkee/rk-grpc/v2/boot"
+	proto "github.com/swordkee/rk-grpc/v2/example/middleware/proto/testdata"
 	"google.golang.org/grpc"
 )
 
