@@ -7,15 +7,15 @@
 package rkgrpcctx
 
 import (
-	"github.com/golang-jwt/jwt/v4"
+	"github.com/golang-jwt/jwt/v5"
 	"github.com/rookie-ninja/rk-entry/v2/cursor"
 	"github.com/rookie-ninja/rk-entry/v2/middleware"
 	"github.com/rookie-ninja/rk-grpc/v2/middleware"
-	"github.com/rookie-ninja/rk-logger"
 	"github.com/rookie-ninja/rk-query"
 	otelcodes "go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"
+	"go.opentelemetry.io/otel/trace/noop"
 	"go.uber.org/zap"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
@@ -24,7 +24,7 @@ import (
 )
 
 var (
-	noopTracerProvider = trace.NewNoopTracerProvider()
+	noopTracerProvider = noop.NewTracerProvider()
 	noopEvent          = rkquery.NewEventFactory().CreateEventNoop()
 	pointerCreator     rkcursor.PointerCreator
 )
@@ -109,7 +109,7 @@ func GetEvent(ctx context.Context) rkquery.Event {
 
 // GetLogger Extract the call-scoped zap logger from context.
 func GetLogger(ctx context.Context) *zap.Logger {
-	logger := rklogger.NoopLogger
+	logger := zap.NewNop()
 
 	// case 1: called from server side
 	m := rkgrpcmid.GetServerContextPayload(ctx)

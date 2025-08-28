@@ -7,7 +7,7 @@ package rkgrpcctx
 
 import (
 	"context"
-	"github.com/golang-jwt/jwt/v4"
+	"github.com/golang-jwt/jwt/v5"
 	rkcursor "github.com/rookie-ninja/rk-entry/v2/cursor"
 	"github.com/rookie-ninja/rk-entry/v2/middleware"
 	"github.com/rookie-ninja/rk-grpc/v2/middleware"
